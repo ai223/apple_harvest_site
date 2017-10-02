@@ -1,0 +1,309 @@
+html{
+  height: 100vh;
+}
+
+body{
+  min-height: 100vh;
+  /*background-color: rgba(139,0,0,.9);*/
+  /*background-image: url(../images/background_img3.jpg);*/
+  /*background-image: linear-gradient(maroon, red 130%);*/
+  background-color: #FBF6D9;
+  margin-top: 12vh;
+  margin-left: 14vw;
+  margin-right: 14vw;
+  margin-bottom: 14vh;
+  font-family: sans-serif;
+}
+
+#all{
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 3px 2px #6D6968;
+  border: 1px white;
+  border-radius: 25px;
+}
+
+header{
+  position: relative;
+  height: 30%;
+  min-height: 500px;
+  background-image: url(../images/contact5.jpg);
+  /*background-size: cover;*/
+  border: 1px white;
+  border-top-right-radius: 28px;
+  border-top-left-radius: 28px;
+}
+
+/* ----------------------- Handle navigation bar here ------------------------ */
+
+/*Font by Khrys Bosland, src: http://www.fontspace.com/khryskreations/kbreindeergames */
+@font-face{
+  font-family: myFont1;
+  src: url(../fonts/kbreindeergames.ttf);
+}
+
+@font-face{
+  font-family: myFont2;
+  src: url(../fonts/);
+}
+
+nav{
+  background-color: tomato;
+  opacity: .95;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*top: 75%;*/
+  padding-top: 1vh;
+  padding-bottom: .8vh;
+  /*border: 1px solid brown;*/
+}
+
+nav ul{
+  list-style-type: none;
+  padding-left: 5vw;
+}
+
+nav ul li{
+  display: inline;
+  font-family: myFont1;
+  font-size: 2vw;
+  /*border: 1px solid black;*/
+}
+
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  padding-top: 1.70vw;
+  padding-bottom: 1.60vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+nav ul a:hover{
+  background: firebrick;
+  transition-duration: 1s;
+}
+
+.current{
+  font-weight: bold;
+}
+
+#info{
+  font-family: myFont1;
+  float: left;
+  width: 75%;
+  /*border: 1px solid black;*/
+}
+
+#info span{
+  font-style: italic;
+}
+
+#info h1{
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+#info h3{
+  padding-left: 40px;
+}
+
+#info p{
+  font-family: Raleway, cursive;
+  font-size: 110%;
+  padding-left: 40px;
+}
+
+#downtown_ithaca_div{
+  float: right;
+  width: 24%;
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#content{
+  clear: both;
+  padding: 25px 20px 25px 20px;
+  overflow-y: auto;
+  text-align: center;
+  font-family: Raleway, cursive;
+  font-size: 115%;
+}
+
+#telephone_icon_div{
+  display: block;
+}
+
+#mail_icon_div{
+  display: block;
+  margin-top: 40px;
+}
+
+#email_icon_div{
+  display: block;
+  margin-top: 25px;
+}
+
+/* ------------------------ Handle head1 div bar here ------------------------- */
+
+
+
+
+/* ------------------------ Handle info div bar here ------------------------- */
+
+
+/* --------------------------- Handle footers here --------------------------- */
+
+#dt_ithaca_icon{
+  margin-left: 1vw;
+}
+
+#foot1{
+  background-color: tomato;
+  padding-top: 3vh;
+  padding-bottom: .5vh;
+  border-top: 3px solid darkblue;
+}
+
+#footer_nav{
+  list-style-type: none;
+  text-align: center;
+}
+
+#footer_nav li{
+  display: inline;
+}
+
+#footer_nav li a{
+  font-family: Raleway, cursive;
+  color: #000000;
+  text-decoration: none;
+  padding-right: .7vw;
+}
+
+#footer_nav li a:hover{
+  font-size: 110%;
+}
+
+#footer_nav li a:active{
+  font-weight: bold;
+}
+
+#foot2{
+  background-color: tomato;
+  padding-top: .1vw;
+  padding-bottom: 2vw;
+  border: 1px white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#social_media{
+  list-style-type: none;
+  text-align: center;
+}
+
+#social_media li{
+  display: inline;
+}
+
+#facebook{
+  width: 7%;
+  height: 7%;
+}
+
+#twitter{
+  width: 7%;
+  height: 7%;
+}
+
+#youtube{
+  width: 5.3%;
+  height: 5.3%;
+  padding-left: 0.7vw;
+  padding-bottom: 1.1vh;
+}
+
+.sep{
+  border-left: 1px solid black;
+  padding-left: 1vw;
+}
+
+@media only screen and (max-width: 570px) {
+
+nav{
+  display: none;
+}
+
+#food_list_1_div{
+  float: none;
+  display: block;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  border-bottom: none;
+  /*border: 2px solid black;;*/
+}
+
+#food_list_1_div ul, #food_list_2_div ul{
+  padding-left: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#food_list_2_div{
+  padding-left: 2px;
+  width: 100%;
+  border-left: none;
+  border-bottom: 7px double lightgray;
+}
+
+#last{
+  padding-bottom: 0px;
+}
+
+#content{
+  text-align: center;
+}
+
+#footer_nav{
+  padding-left: 10px;
+}
+
+#footer_nav li{
+  border: none;
+  padding-left: 0px;
+  padding-bottom: 2px;
+  display: block;
+}
+
+#dt_ithaca_icon{
+  width: 70%;
+  margin-left: 1vw;
+}
+
+#social_media{
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+#social_media li{
+  display: block;;
+}
+
+#facebook{
+  width: 60px;
+}
+
+#twitter{
+  width: 60px;
+}
+
+#youtube{
+  margin-top: 8px;
+  width: 45px;
+}
+
+}
