@@ -1,0 +1,105 @@
+header{
+  background-image: url(../images/contact5.jpg);
+}
+
+/* ----------------------- Handle navigation bar here ------------------------ */
+
+#info{
+  font-family: "myFont1", cursive;
+  float: left;
+  width: 75%;
+  /*border: 1px solid black;*/
+}
+
+#info span{
+  font-style: italic;
+}
+
+#info h1{
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+#info h3{
+  padding-left: 40px;
+}
+
+#info p{
+  font-family: "myFont2", cursive;
+  font-size: 110%;
+  padding-left: 40px;
+}
+
+#downtown_ithaca_div{
+  float: right;
+  width: 24%;
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#content{
+  clear: both;
+  padding: 25px 20px 25px 20px;
+  overflow-y: auto;
+  text-align: center;
+  font-family: myFont2, cursive;
+  font-size: 115%;
+}
+
+#telephone_icon_div{
+  display: block;
+}
+
+#mail_icon_div{
+  display: block;
+  margin-top: 40px;
+}
+
+#email_icon_div{
+  display: block;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 570px) {
+
+#all{
+  width: 100%;
+}
+
+#downtown_ithaca_div{
+  text-align: center;
+  float: none;
+  clear: both;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#content p{
+  word-wrap: break-word;
+}
+
+#info{
+  width: 100%;
+  text-align: center;
+  padding-left: 0px;
+  overflow: auto;
+}
+
+#info h1, #info h3 {
+  padding-left: 0px;
+}
+
+#info p{
+  padding-left: 15px;
+  padding-right: 15px;
+  word-wrap: break-word;
+}
+
+#content{
+  text-align: center;
+}
+
+}

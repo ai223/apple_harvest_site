@@ -1,0 +1,70 @@
+header{
+  background-image: url(../images/apples.jpg);
+}
+
+#info{
+  font-family: myFont1, cursive;
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding-bottom: 0px;
+  /*border: 1px solid black;*/
+}
+
+#info h1{
+  font-size: 270%;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 0px;
+  /*border: 1px solid black;*/
+}
+
+#content{
+  font-family: "myFont2", cursive!important;
+  clear: both;
+  padding: 25px 20px 25px 20px;
+  overflow-y: auto;
+}
+
+#content #img_1_div{
+  text-align: center;
+}
+
+#img_1_div{
+  text-align: center;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+#img_1_div img{
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 13px;
+}
+
+@media only screen and (max-width: 570px) {
+
+#info{
+  font-size: 55%;
+  word-wrap: break-word;
+}
+
+#info h1{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#first{
+  margin-top: 0px;
+}
+
+#img_1_div{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+}
