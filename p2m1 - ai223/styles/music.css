@@ -1,0 +1,327 @@
+html{
+  height: 100vh;
+}
+
+body{
+  min-height: 100vh;
+  /*background-color: rgba(139,0,0,.9);*/
+  /*background-image: url(../images/background_img3.jpg);*/
+  /*background-image: linear-gradient(maroon, red 130%);*/
+  background-color: #FBF6D9;
+  margin-top: 12vh;
+  margin-left: 14vw;
+  margin-right: 14vw;
+  margin-bottom: 14vh;
+  font-family: sans-serif;
+}
+
+#all{
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 3px 2px #6D6968;
+  border: 1px white;
+  border-radius: 25px;
+}
+
+header{
+  position: relative;
+  height: 30%;
+  min-height: 500px;
+  background-image: url(../images/concert_1.jpg);
+  background-size: cover;
+  border: 1px white;
+  border-top-right-radius: 28px;
+  border-top-left-radius: 28px;
+}
+
+/* ----------------------- Handle navigation bar here ------------------------ */
+
+/*Font by Khrys Bosland, src: http://www.fontspace.com/khryskreations/kbreindeergames */
+@font-face{
+  font-family: myFont1;
+  src: url(../fonts/kbreindeergames.ttf);
+}
+
+@font-face{
+  font-family: myFont2;
+  src: url(../fonts/);
+}
+
+nav{
+  background-color: tomato;
+  opacity: .95;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*top: 75%;*/
+  padding-top: 1vh;
+  padding-bottom: .8vh;
+  /*border: 1px solid brown;*/
+}
+
+nav ul{
+  list-style-type: none;
+  padding-left: 5vw;
+}
+
+nav ul li{
+  display: inline;
+  font-family: myFont1;
+  font-size: 2vw;
+  /*border: 1px solid black;*/
+}
+
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  padding-top: 1.70vw;
+  padding-bottom: 1.60vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+nav ul a:hover{
+  background: firebrick;
+  transition-duration: 1s;
+}
+
+.current{
+  font-weight: bold;
+}
+
+#date_selection_div{
+  text-align: center;
+  display: block;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  border-bottom: 7px double lightgray;
+  font-family: myFont1;
+  font-size: 150%;
+  overflow-y: auto;
+}
+
+#date_selection_div h1{
+  margin-bottom: 0px;
+}
+
+.dates{
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  overflow: auto;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 100%;
+  /*border: 1px solid black;*/
+}
+
+#saturday, #sunday{
+  text-decoration: none;
+  color: darkorange;
+}
+
+#saturday img, #sunday img{
+  visibility: hidden;
+}
+
+#saturday:hover, #sunday:hover{
+}
+
+#saturday:hover img, #sunday:hover img{
+  visibility: visible;
+  display: inline;
+}
+
+#sunday{
+  text-decoration: none;
+  color: crimson;
+}
+
+#saturday_concerts{
+  padding-bottom: 40px;
+  border-bottom: 7px double lightgray;
+}
+
+.concerts{
+  clear:both;
+  text-align: center;
+  font-family: myFont1;
+  list-style-type: none;
+}
+
+.concerts h1{
+  margin-top: 60px;
+}
+
+.concerts h3{
+  margin-bottom: 40px;
+}
+
+.concerts ul{
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.concerts ul li{
+  margin-bottom: 30px;
+  font-size: 130%;
+}
+
+#dt_ithaca_icon{
+  margin-left: 1vw;
+}
+
+#foot1{
+  background-color: tomato;
+  padding-top: 3vh;
+  padding-bottom: .5vh;
+  border-top: 3px solid darkblue;
+}
+
+#footer_nav{
+  list-style-type: none;
+  text-align: center;
+}
+
+#footer_nav li{
+  display: inline;
+}
+
+#footer_nav li a{
+  font-family: Raleway, cursive;
+  color: #000000;
+  text-decoration: none;
+  padding-right: .7vw;
+}
+
+#footer_nav li a:hover{
+  font-size: 110%;
+}
+
+#footer_nav li a:active{
+  font-weight: bold;
+}
+
+#foot2{
+  background-color: tomato;
+  padding-top: .1vw;
+  /*padding-bottom: 2vw;*/
+  border: 1px white;
+}
+
+#foot2 ul{
+  margin-bottom: 0px;
+}
+
+#social_media{
+  list-style-type: none;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+#social_media li{
+  display: inline;
+}
+
+#facebook{
+  width: 7%;
+  height: 7%;
+}
+
+#twitter{
+  width: 7%;
+  height: 7%;
+}
+
+#youtube{
+  width: 5.3%;
+  height: 5.3%;
+  padding-left: 0.7vw;
+  padding-bottom: 1.1vh;
+}
+
+.sep{
+  border-left: 1px solid black;
+  padding-left: 1vw;
+}
+
+#sources_div{
+  background-color: tomato;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#sources_div p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media only screen and (max-width: 570px) {
+
+nav{
+  display: none;
+}
+
+#date_selection_div{
+  padding-bottom: 50px;
+}
+
+.dates{
+  float: none;
+  display: block;
+  width: 100%;
+}
+
+.concerts ul{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 80%;
+}
+
+#content{
+  text-align: center;
+}
+
+#footer_nav{
+  padding-left: 10px;
+}
+
+#footer_nav li{
+  border: none;
+  padding-left: 0px;
+  padding-bottom: 2px;
+  display: block;
+}
+
+#dt_ithaca_icon{
+  width: 70%;
+  margin-left: 1vw;
+}
+
+#social_media{
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+#social_media li{
+  display: block;;
+}
+
+#facebook{
+  width: 60px;
+}
+
+#twitter{
+  width: 60px;
+}
+
+#youtube{
+  margin-top: 8px;
+  width: 45px;
+}
+
+}
