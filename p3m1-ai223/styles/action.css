@@ -1,0 +1,44 @@
+header{
+  background-image: url(../images/contact5.jpg);
+}
+
+#smiley p{
+  font-size: 900%;
+  padding: 0px;
+  margin: 20px 0px 0px 40px;
+  /*background-color: lightblue;*/
+}
+
+
+#message{
+  display: block;
+  height, width: 100%;
+  position: relative;
+}
+
+#message h1{
+  font-family: myFont1;
+}
+
+#message p{
+  padding-top: 35px;
+  font-family: myFont2;
+}
+
+#message div{
+  padding: 10px 0px 100px 0px;
+  width: 70%;
+  margin-left: 75px;
+  position: relative;
+}
+
+@media only screen and (max-width: 570px) {
+
+#message div{
+  margin: 0px auto;
+  word-wrap: break-word;
+}
+
+#message h1{
+  font-size:140%;  
+}

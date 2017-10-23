@@ -58,7 +58,7 @@
 
         <div id="form_div">
           <div id=form_div_inner>
-          <form>
+          <form action="/action.php">
             <p id="first">Please leave us your feedback!<p>
               <span class="not_last">
                 <input type="radio" name="status" value="yes">I have attended the festival

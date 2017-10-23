@@ -14,7 +14,7 @@
   <body>
     <div id='all'>
 
-      <!-- Handle navigation bar -->
+      <!-- Include navigation bar -->
       <?php
         include "includes/navigation.php";
       ?>
