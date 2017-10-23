@@ -1,44 +1,24 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <!-- Link stylesheet -->
-    <link rel="stylesheet"
-          type="text/css"
-          href="../styles/all.css"
-          media="all">
+    <!-- link stylesheets -->
+    <?php
+      include "includes/header.php";
+    ?>
 
     <link rel="stylesheet"
           type="text/css"
-          href="../styles/food.css"
+          href="styles/food.css"
           media="all">
-    <!-- Set encoding -->
-    <meta charset="utf-8">
-    <!-- Set icon -->
-    <!-- Source: http://www.clker.com/cliparts/a/a/b/a/1194986147544723915applf.svg.hi.png -->
-    <link rel="icon"
-          type="images/jpg"
-          href="../images/icon.jpg">
-    <!-- Set title -->
-    <title>Ithaca's 2017 Apple Harvest Festival</title>
-
   </head>
 
   <body>
     <div id='all'>
 
-      <header style="background-image:url(../images/eating-apples.jpg)">
-        <nav>
-          <ul>
-            <li><a href="../index.html">Home</a></li><!--
-         --><li><a href="events.html">Events</a><!--
-         --><li><a href="music.html">Music</a><!--
-         --><li><a class='current' href="food.html">Food</a><!--
-         --><li><a href="applications.html">Applications</a><!--
-         --><li><a href="about.html">About</a><!--
-         --><li><a href="contact.html">Contact</a><!--
-         --></ul>
-        </nav>
-      </header>
+      <!-- Handle navigation bar -->
+      <?php
+        include "includes/navigation.php";
+      ?>
 
       <div id='apple_food_img_div'>
         <!-- Image Source: https://www.abcteach.com/documents/clip-art-apple-cider-color-i-abcteachcom-50392 -->
@@ -185,37 +165,10 @@
         </div>
       </div>
 
-      <div>
-        <!-- Image Source: http://downtownithaca.com/local/images/img-downtown-ithaca.png -->
-        <img id="dt_ithaca_icon" alt="dt_ithaca_icon" src="../images/dt_ithaca.png">
-      </div>
-
       <footer>
-        <div id="foot1">
-          <ul id="footer_nav">
-            <li><a href="../index.html">Home</a></li>
-            <li class='sep'><a href="events.html">Events</a></li>
-            <li class='sep'><a href="music.html">Music</a></li>
-            <li class='sep'><a class="current" href="food.html">Food</a></li>
-            <li class='sep'><a href="applications.html">Applications</a></li>
-            <li class='sep'><a href="about.html">About</a></li>
-            <li class='sep'><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div id="foot2">
-          <ul id="social_media">
-            <li><a href="https://www.facebook.com/events/1193463470786372" target="_blank">
-              <!-- Source: http://1.bp.blogspot.com/-n8ab_0x-rZs/TmCTE_Z5Z2I/AAAAAAAABM0/PvYvmIn3ZUc/w1200-h630-p-k-no-nu/facebook_icono.png -->
-              <img id="facebook" alt="facebook" src="../images/facebooklogo.jpg"></a></li>
-            <li><a href="https://twitter.com/downtownithaca" target="_blank">
-              <!-- Source:  -->
-              <img id="twitter" alt="twitter" src="../images/twitterlogo.jpg"></a></li>
-            <li><a href="https://www.youtube.com/user/downtownithaca" target="_blank">
-              <!-- Source: http://www.thebigdraw.org/images/social/drawn/youtube.png  -->
-              <img id="youtube" alt="youtube" src="../images/youtubelogo.png"></a></li>
-          </ul>
-        </div>
+          <?php
+            include "includes/footer.php";
+          ?>
 
         <div id="sources_div">
           <p>Website designed by ai223. Sources (in order of appearance): Banner

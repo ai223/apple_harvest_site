@@ -1,0 +1,183 @@
+header{
+  background-image: url(../images/app_img_1.JPG);
+}
+
+/* ------------------------ Handle volunteer header div bar here ------------------------- */
+
+#volunteer_div{
+  display: block;
+  border-bottom: 7px double lightgray;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  padding-bottom: 4vh;
+}
+
+#volunteer{
+  font-family: myFont1, cursive;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#volunteer_text{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#volunteer_text p{
+  font-family: myFont2, cursive;
+  font-size: 110%;
+  /*text-align: center;*/
+}
+
+#volunteer_link_div{
+  display: block;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  /*border: 1px solid black;*/
+}
+
+#volunteer_link{
+  display: inline;
+  border-radius: 12px;
+  border: none;
+  padding: 18px 35px 18px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-family: myFont1, cursive;
+  font-size: 165%;
+  color: #000000;
+  background-color: #2BD430;
+}
+
+#volunteer_link:hover{
+  cursor: pointer;
+  color: inherit;
+  background-color: #01A11C;
+  transition-duration: 0.4s;
+}
+
+#vendor_div{
+  display: block;
+  text-align: center;
+}
+
+#vendor{
+  margin-top: 60px;
+  font-family: myFont1, cursive;
+}
+
+#vendor_sub{
+  font-family: myFont2, cursive;
+  font-size: 140%;
+}
+
+#vendor_wrapper{
+  display: block;
+  /*border: 1px solid black;*/
+}
+
+.vendor_imgs{
+  box-sizing: border-box;
+  float:left;
+  width: 33.3%;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+
+.vendor_imgs p{
+  font-family: myFont1, cursive;
+  font-size: 150%;
+  color: #000000;
+  background-color: inherit;
+  margin-bottom: 35px;
+}
+
+.vendor_imgs img{
+  border-radius: 12px;
+}
+
+.vendor_imgs a{
+  text-decoration: none;
+}
+
+#clear_div{
+  clear: both;
+  border-bottom: 7px double lightgray;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+#content_header_div{
+  display: block;
+  text-align: center;
+  font-family: myFont1, cursive;
+  font-size: 165%;
+}
+
+#content{
+  font-family: myFont2, cursive;
+  clear: both;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* Handle responsive CSS here */
+@media only screen and (max-width: 570px) {
+
+#vendor_div{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#volunteer_div h4{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#volunteer_text{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 80%;
+}
+
+#volunteer_link{
+  padding: 8px 25px 8px 25px;
+  font-size: 150%;
+}
+
+.vendor_imgs{
+  width: 100%;
+  float: none;
+}
+
+.vendor_imgs p{
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px dashed gray;
+}
+
+#final_img p{
+  border: none;
+  padding-bottom: 0px;
+}
+
+#content_header_div{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#content{
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+#content p{
+  width: 100%;
+}
+
+} /* End Responsive CSS*/
