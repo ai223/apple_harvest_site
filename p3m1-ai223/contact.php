@@ -67,7 +67,9 @@
             Name:<br />
             <input type='text' name='name'><br /><br />
             Email:<br />
-            <input type='text' name='email'><br/>
+            <input type='text' name='email'><br/><br />
+            <input type="checkbox" name="permission" value="permission">
+              <label>Yes, I want to recieve occassional updates and information about the Ithaca Apple Harvest Festival!</label><br />
             <p>Enter your questions/comments here:</p>
             <textarea name='comment' form="usrform"></textarea><br /><br /s>
             <input id="submit_btn" type="submit" value="Submit">
