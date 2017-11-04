@@ -1,0 +1,121 @@
+header{
+  background-image: url(../images/concert_1.jpg);
+}
+
+#date_selection_div{
+  text-align: center;
+  display: block;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  border-bottom: 7px double lightgray;
+  font-family: myFont1, cursive;
+  font-size: 150%;
+  overflow-y: auto;
+}
+
+#date_selection_div h1{
+  margin-bottom: 0px;
+}
+
+.dates{
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  overflow: auto;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 100%;
+  /*border: 1px solid black;*/
+}
+
+#saturday, #sunday{
+  text-decoration: none;
+  color: darkorange;
+  background-color: white;
+}
+
+#saturday img, #sunday img{
+  visibility: hidden;
+}
+
+#saturday:hover, #sunday:hover{
+}
+
+#saturday:hover img, #sunday:hover img{
+  visibility: visible;
+  display: inline;
+}
+
+#sunday{
+  text-decoration: none;
+  color: crimson;
+}
+
+#saturday_concerts{
+  padding-bottom: 40px;
+  border-bottom: 7px double lightgray;
+}
+
+.concerts{
+  clear:both;
+  text-align: center;
+  font-family: myFont1, cursive;
+  list-style-type: none;
+
+}
+
+.concerts h1{
+  margin-top: 60px;
+}
+
+.concerts h3{
+  margin-bottom: 40px;
+}
+
+.concerts ul{
+  list-style-type: none;
+  margin-bottom: 40px;
+  text-align: left;
+  padding-left: 20.5vw;
+  padding-right: 15vw;
+}
+
+.concerts ul li{
+  margin-bottom: 30px;
+  font-size: 130%;
+}
+
+.concerts ul li a{
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.concerts ul li a:hover{
+  font-size: 105%;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 570px) {
+
+#date_selection_div{
+  padding-bottom: 50px;
+}
+
+.dates{
+  float: none;
+  display: block;
+  width: 100%;
+}
+
+.concerts ul{
+  padding-left: 25px;
+  padding-right: 10px;
+  font-size: 80%;
+}
+
+#content{
+  text-align: center;
+}
+
+}
