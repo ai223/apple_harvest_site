@@ -128,6 +128,7 @@ textarea{
 }
 
 .error{
+  display: inline-block;
   padding: 2px 5px 2px 5px;
   border: 1px solid #ff6666;
   border-radius: 4px;
@@ -145,8 +146,8 @@ textarea{
   display: none;
 }
 
-#commentsError{
-  margin-bottom: 25px;
+#commentsError, #radioError{
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 570px) {

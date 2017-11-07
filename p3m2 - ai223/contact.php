@@ -68,9 +68,9 @@
             <p id="first">Please leave us your feedback!<p>
               <span class="error hidden_error" id="radioError">Please select one...</span><br/>
               <span class="radio_btn not_last">
-                <input type="radio" name="status" value="yes"><label>I have attended the festival</label>
+                <input class="radio_btn" type="radio" name="status" value="yes"><label>I have attended the festival</label>
               </span>
-            <input class="radio_btn" type="radio" name="status"  value="no"><label>I have not attended the festival</label><br/><br/>
+                <input class="radio_btn" type="radio" name="status"  value="no"><label>I have not attended the festival</label><br/><br/>
 
 
             <div class="form_container" id="name_div">
@@ -83,6 +83,7 @@
               <span class="error hidden_error" id="nameError">Oops! You need to enter a name...</span>
             </div> <!-- end name_div -->
 
+
             <div class="form_container" id="email_div">
               <div class="label_container">
                 <label for="emailLabel">Email:</label><br/>
@@ -93,6 +94,7 @@
               <span class="error hidden_error" id="emailError">Oops! Something's wrong with your e-mail...</span>
             </div> <!-- end email div -->
 
+
             <div id="checkbox_div">
               <input type="checkbox" name="permission" value="permission">
                 <label>
@@ -100,16 +102,15 @@
                 </label><br />
             </div>
 
-
             <p>Enter your questions/comments here:</p>
             <div class="form-container" id="textarea_div">
               <span class="error hidden_error" id="commentsError">Please fill out the comments section.</span>
-              <textarea id="comments" name='comments' form="userForm" required></textarea><br /><br /s>
+              <textarea id="comments" name='comments' form="commentForm" maxlength="1000" required></textarea><br/><br/>
             </div>
 
             <button type="submit" id="submit_btn">Submit</button>
 
-          </form>
+          </form> <!-- End form-->
         </div> <!-- End form div inner -->
       </div> <!-- End form div -->
 

@@ -12,5 +12,6 @@
 <link rel="icon"
       type="images/jpg"
       href="images/icon.jpg">
+      
 <!-- Set title -->
 <title>Ithaca's 2017 Apple Harvest Festival</title>

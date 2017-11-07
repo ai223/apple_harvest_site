@@ -2,16 +2,15 @@
 $(document).ready(function () {
 
   $("#commentForm").on("submit", function() {
-    console.log("Hello!");
-
+    // form is valid by default
     formIsValid = true;
 
     var value = jQuery("input[name='status']:checked").val();
-    console.log("Value: " + value);
     var nameIsValid = $("#userName").prop("validity").valid;
     var emailIsValid = $("#userEmail").prop("validity").valid;
     var textareaIsValid = $("#comments").prop("validity").valid;
 
+    // hide all messages at the beginning to have them show up one by one
     $("#radioError").hide();
     $("#nameError").hide();
     $("#emailError").hide();
@@ -19,9 +18,9 @@ $(document).ready(function () {
 
     if((value == 'yes') || (value == "no")){
     } else {
-      $("radioError").show();
-      return False;
-    }
+      $("#radioError").show();
+      return false;
+    }  // end if
 
     if(!nameIsValid){
       $("#nameError").show();
@@ -31,12 +30,12 @@ $(document).ready(function () {
     if(!emailIsValid){
       $("#emailError").show();
       return false;
-    }
+    }  // end if
 
     if(!textareaIsValid){
       $("#commentsError").show();
       return false;
-    }
+    }  // end if
 
     return formIsValid;
 
