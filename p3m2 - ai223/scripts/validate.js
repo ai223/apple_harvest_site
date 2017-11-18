@@ -1,46 +1,50 @@
 // on load
 $(document).ready(function () {
+  var __TESTING__ = true;
 
-  $("#commentForm").on("submit", function() {
-    // form is valid by default
-    formIsValid = true;
+  if (!__TESTING__) {
 
-    var value = jQuery("input[name='status']:checked").val();
-    var nameIsValid = $("#userName").prop("validity").valid;
-    var emailIsValid = $("#userEmail").prop("validity").valid;
-    var textareaIsValid = $("#comments").prop("validity").valid;
+    $("#commentForm").on("submit", function() {
+      // form is valid by default
+      formIsValid = true;
 
-    // hide all messages at the beginning to have them show up one by one
-    $("#radioError").hide();
-    $("#nameError").hide();
-    $("#emailError").hide();
-    $("#commentsError").hide();
+      var value = jQuery("input[name='status']:checked").val();
+      var nameIsValid = $("#userName").prop("validity").valid;
+      var emailIsValid = $("#userEmail").prop("validity").valid;
+      var textareaIsValid = $("#comments").prop("validity").valid;
 
-    if((value == 'yes') || (value == "no")){
-    } else {
-      $("#radioError").show();
-      return false;
-    }  // end if
+      // hide all messages at the beginning to have them show up one by one
+      $("#radioError").hide();
+      $("#nameError").hide();
+      $("#emailError").hide();
+      $("#commentsError").hide();
 
-    if(!nameIsValid){
-      $("#nameError").show();
-      return false;
-    }  // end if
+      if((value == 'yes') || (value == "no")){
+      } else {
+        $("#radioError").show();
+        return false;
+      }  // end if
 
-    if(!emailIsValid){
-      $("#emailError").show();
-      return false;
-    }  // end if
+      if(!nameIsValid){
+        $("#nameError").show();
+        return false;
+      }  // end if
 
-    if(!textareaIsValid){
-      $("#commentsError").show();
-      return false;
-    }  // end if
+      if(!emailIsValid){
+        $("#emailError").show();
+        return false;
+      }  // end if
 
-    return formIsValid;
+      if(!textareaIsValid){
+        $("#commentsError").show();
+        return false;
+      }  // end if
 
-  });
-
+      return formIsValid;
+    });
+  } else {
+    return;
+  }  // end if
 
 
 });

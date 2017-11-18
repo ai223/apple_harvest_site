@@ -1,6 +1,53 @@
+<?php
+  // Get form information
+  $submit = $_REQUEST["submit"];
+  // get form variables
+  $name = $_REQUEST["userName"];
+  $email = $_REQUEST["userEmail"];
+  $comments = $_REQUEST["comments"];
+  // get error message class
+  $HIDDEN_ERROR_CLASS = "hidden_error";
+
+  if (isset($submit)) {
+
+    // if name isn't enterd
+    if( !empty($name) ) {
+      $nameIsValid = true;
+    } else {
+      $nameIsValid = false;
+    }  // end if
+
+    if( filter_var($email, FILTER_VALIDATE_EMAIL) ) {
+      $emailIsValid = true;
+    } else {
+      $emailIsValid = false;
+    }  // end if
+
+    if( !empty($comments) ) {
+      $commentsIsValid = true;
+    } else {
+      $commentsIsValid = false;
+    }  // end if
+
+    // check if form is valid
+    $formIsValid = $nameIsValid && $emailIsValid && $commentsIsValid;
+    // if form is valid, advance
+    if ($formIsValid) {
+      header("Location: action.php");
+      return;
+    } // end if
+  } else {
+    $nameIsValid = true;
+    $emailIsValid = true;
+    $commentsIsValid = true;
+    // return;
+  }  // end if
+?>
+
 <!DOCTYPE HTML>
 <html>
   <head>
+
     <?php
       include "includes/header.php";
     ?>
@@ -63,14 +110,16 @@
         <div id="form_div">
           <div id=form_div_inner>
 
-          <form method="post" action="action.php" id="commentForm" novalidate>
+          <form method="post" action="contact.php" id="commentForm" novalidate>
 
             <p id="first">Please leave us your feedback!<p>
               <span class="error hidden_error" id="radioError">Please select one...</span><br/>
               <span class="radio_btn not_last">
-                <input class="radio_btn" type="radio" name="status" value="yes"><label>I have attended the festival</label>
+                <input class="radio_btn" type="radio" name="status" value="yes">
+                <label>I have attended the festival</label>
               </span>
-                <input class="radio_btn" type="radio" name="status"  value="no"><label>I have not attended the festival</label><br/><br/>
+                <input class="radio_btn" type="radio" name="status"  value="no">
+                <label>I have not attended the festival</label><br/><br/>
 
 
             <div class="form_container" id="name_div">
@@ -78,9 +127,10 @@
                 <label for="nameLabel">Name:</label><br/>
               </div>
               <div class="input_container">
-                <input type='text' id="userName" name='userName' required/><br/><br/>
+                <input type='text' id="userName" name='userName' value="<?php echo($name) ?>" required/><br/><br/>
               </div>
-              <span class="error hidden_error" id="nameError">Oops! You need to enter a name...</span>
+              <span class="error <?php if ($nameIsValid) {echo($HIDDEN_ERROR_CLASS);} ?>" id="nameError">
+                Oops! You need to enter a name...</span>
             </div> <!-- end name_div -->
 
 
@@ -89,9 +139,9 @@
                 <label for="emailLabel">Email:</label><br/>
               </div>
               <div class="input_container">
-                <input type='email' id="userEmail" name='userEmail' required/><br/><br/>
+                <input type='email' id="userEmail" name='userEmail' value="<?php echo($email) ?>" required/><br/><br/>
               </div>
-              <span class="error hidden_error" id="emailError">Oops! Something's wrong with your e-mail...</span>
+              <span class="error <?php if ($emailIsValid) {echo($HIDDEN_ERROR_CLASS);} ?>" id="emailError">Oops! Something's wrong with your e-mail...</span>
             </div> <!-- end email div -->
 
 
@@ -104,11 +154,13 @@
 
             <p>Enter your questions/comments here:</p>
             <div class="form-container" id="textarea_div">
-              <span class="error hidden_error" id="commentsError">Please fill out the comments section.</span>
-              <textarea id="comments" name='comments' form="commentForm" maxlength="1000" required></textarea><br/><br/>
+              <span class="error <?php if ($commentsIsValid) {echo($HIDDEN_ERROR_CLASS);} ?>" id="commentsError">Please fill out the comments section.</span>
+
+              <textarea id="comments" name='comments' form="commentForm" maxlength="1000" required><?php echo($comments) ?>
+              </textarea><br/><br/>
             </div>
 
-            <button type="submit" id="submit_btn">Submit</button>
+            <button type="submit" name="submit" id="submit_btn">Submit</button>
 
           </form> <!-- End form-->
         </div> <!-- End form div inner -->
